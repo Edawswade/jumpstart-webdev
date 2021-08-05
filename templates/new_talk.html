@@ -1,0 +1,15 @@
+<h1>Submit a new talk</h1>
+
+<p>To submit a new talk, please create a description below for your randomly mashed up talk title, then press the "Submit" button.</p>
+
+<h2>{{ title }}</h2>
+
+<form action="/talk" method="post">
+  <label for="form-title">Title:</label>
+  <input type="text" name="form-title" value="{{ title }}" size="100" readonly />
+  <br /><br />
+  <label for="form-description">Description:</label>
+  <textarea name="form-description" rows="10" cols="50"></textarea>
+  <br /><br />
+  <input type="submit" value="Submit" />
+</form>
